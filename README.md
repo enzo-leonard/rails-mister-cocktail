@@ -32,3 +32,4 @@ TO DO
 
 * mode voir mode editer
 
+* Responsive
