@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TO DO
 
-Things you may want to cover:
+* Flip card
 
-* Ruby version
+* Select 2 pour les ingrédients
 
-* System dependencies
+* One page view
 
-* Configuration
+* Delete cocktail
 
-* Database creation
+* Fetcher les cocktails
 
-* Database initialization
+* (Review)
 
-* How to run the test suite
+* Recherche de cocktail
 
-* Services (job queues, cache servers, search engines, etc.)
+* Partie test
 
-* Deployment instructions
+* Choose random
 
-* ...
+* Function lecture description
+
+* Dark mode
+
+* update description
+
+* API google image
+
+* supprimer cocktail
+
+* mode voir mode editer
+

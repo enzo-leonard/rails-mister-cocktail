@@ -1,6 +1,45 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background-color: transparent;
+  height: 80px;
+  transition: 0.2s height ease;
+
+  .navbar-brand{
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    padding-left: 40px;
+    font-family: 'McLaren',
+    cursive;
+
+  }
+
+  input, .btn {
+    height: 40px;
+    padding: auto 10px;
+    padding-left: 10px;
+    margin: 10px;
+  }
+
+
+}
+
+.navbar-lewagon-white {
+  background-color: white;
+  display: flex;
+  align-items: baseline;
+  height: 90px;
+  border-bottom: 2px solid #a76b4b ;
+
+  .navbar-brand {
+    font-size: 38px;
+    font-weight: 600;
+    padding-left: 40px;
+     color: #774d37;
+    font-family: 'McLaren',
+    cursive;
+  }
+
 }
 
 .navbar-lewagon .navbar-collapse {

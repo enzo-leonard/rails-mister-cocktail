@@ -9,5 +9,32 @@
 @import "font-awesome";
 
 // Your CSS partials
-@import "components/index";
-@import "pages/index";
+@import "components/*";
+@import "pages/*";
+
+
+
+
+
+body {
+
+  background-color: blanchedalmond;
+  background-image: linear-gradient(rgba(255, 241, 225,0.7), rgba(255, 241, 222, 0.6)), asset-url('pattern');
+  -webkit-animation: slide 50s linear infinite;
+}
+
+.dark {
+  background-blend-mode: difference;
+  background-color: blanchedalmond;
+  background-image:  asset-url('pattern');
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -400px -150px;
+  }
+}

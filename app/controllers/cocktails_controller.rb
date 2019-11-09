@@ -1,8 +1,9 @@
 class CocktailsController < ApplicationController
+
   before_action :find_cocktail, only: [ :show, :destroy, :edit, :update]
 
   def index
-    @cocktails = Cocktail.all
+    @cocktails = Cocktail.all.order(:id)
   end
 
   def new
@@ -26,6 +27,7 @@ class CocktailsController < ApplicationController
   end
 
   def show
+    @cocktail.description = read_description(@cocktail.description)
   end
 
   private
@@ -35,7 +37,11 @@ class CocktailsController < ApplicationController
   end
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
+  end
+
+  def read_description(description)
+    description.gsub(/\n/, '').strip
   end
 
 
