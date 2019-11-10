@@ -2,34 +2,30 @@
 
 TO DO
 
-* Flip card
+* Add selector
+
+* Add query
 
 * Select 2 pour les ingrédients
+
+* Mobile first
 
 * One page view
 
 * Delete cocktail
 
-* Fetcher les cocktails
-
-* (Review)
-
-* Recherche de cocktail
-
 * Partie test
 
 * Choose random
 
-* Function lecture description
+* update description
 
 * Dark mode
 
-* update description
-
 * API google image
-
-* supprimer cocktail
 
 * mode voir mode editer
 
-* Responsive
+* quizz
+
+

@@ -1,0 +1,31 @@
+.selector {
+  background-color: rgba(255, 241, 225, 0.8);
+  border-radius: 5px;
+  flex-wrap: wrap;
+  height: 130px;
+  padding: 10px;
+  width: 500px;
+
+  #name{
+      background-color: white;
+      width: 500px;
+      height: 30px;
+      padding: 20px;
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+      border: none;
+
+
+  }
+
+  select{
+      background-color: white;
+      margin: 16px;
+      height: 30px;
+      padding: 10px;
+      width: 100%;
+
+  }
+}
+
