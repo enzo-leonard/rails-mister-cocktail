@@ -1,15 +1,14 @@
 <%= render 'shared/navbar'%>
 <div class="home-banner">
-  <div class="container"></
-    <h1>Les cocktails de grecos</h1>
-    Qu'est-ce que t'as sous la main ?
+  <div class="container">
+    <h2>Les cocktails de grecos </h2>
     <div class="selector">
       <%= form_tag cocktails_path, method: :get do %>
         <%= select('get', :name ,Cocktail.all.collect {|p| [ p.name, p.id ] }, { include_blank: true }, class: 'select2',  data: { placeholder: "Recherche par nom" }, value: 'test') %>
 
         <%#= select_tag 'get[name]', options_from_collection_for_select(Ingredient.all, "id", "name"), class: 'select2', include_blank: true , prompt: "Select something", value: 'test'%>
         <%= select('get', :ig , Ingredient.all.collect {|p| [ p.name, p.id ] }, { include_blank: true }, class: 'select2', multiple: 'multiple', data: { placeholder: "Recherche par ingrédients" }) %>
-        <%= submit_tag "Search", class: "w-10 btn btn-primary" %>
+        <%= submit_tag "Recherche", class: "w-10 btn btn-primary" %>
        <% end %>
     </div>
     </div>
@@ -24,7 +23,7 @@
       <div class="flip-card-inner">
         <div class="flip-card-front">
         <div class="cocktail-card" style="background-image : linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url( <%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>); background-size: cover; background-position-y: -286px;">
-          <%= item.name %>
+        <a><%= item.name %></a>
       </div>
         </div>
         <div class="flip-card-back"  style="background-image : linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)),  url( <%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>); background-size: cover;">
