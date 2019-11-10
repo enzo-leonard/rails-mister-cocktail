@@ -38,3 +38,16 @@ body {
     background-position: -400px -150px;
   }
 }
+
+
+@media(max-width: 992px) {
+  body {
+    background-size: 250px;;
+  }
+
+  .info h2 {
+    font-size: 30px;
+  }
+
+
+}

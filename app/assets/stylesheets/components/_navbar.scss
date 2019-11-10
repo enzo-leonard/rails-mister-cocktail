@@ -49,3 +49,33 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+@media(max-width: 992px) {
+  .navbar-lewagon {
+    justify-content: space-between;
+    background-color: transparent;
+    height: 80px;
+    transition: 0.2s height ease;
+    width: 100%;
+
+    .navbar-brand {
+      color: white;
+      font-size: 28px;
+      font-weight: 600;
+      padding-left: 10px;
+      font-family: 'McLaren',
+        cursive;
+
+    }
+
+    input,
+    .btn {
+      height: 40px;
+      padding: auto 10px;
+      padding-left: 10px;
+      margin: 10px;
+    }
+
+
+  }
+}

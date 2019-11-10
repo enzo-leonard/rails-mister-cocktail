@@ -4,7 +4,10 @@
 }
 
 .card-show{
-  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
 
 .show-view{
@@ -42,6 +45,7 @@
   margin: 10px;
   border-radius: 5px;
   white-space: pre-line;
+  width: 30%;
 }
 
 .ig-list {
@@ -53,4 +57,24 @@
   border-radius: 3px;
   padding: 5px;
   margin: 2px;
+}
+
+
+
+
+body {
+
+  background-color: blanchedalmond;
+  background-image: linear-gradient(rgba(255, 241, 225,0.7), rgba(255, 241, 222, 0.6)), asset-url('pattern');
+  -webkit-animation: slide 50s linear infinite;
+}
+
+@media(max-width: 992px) {
+  .back {
+    font-size: 30px;;
+  }
+
+  .description, .col1 {
+    width: 100%;
+  }
 }
