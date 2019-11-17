@@ -1,3 +1,4 @@
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
@@ -19,11 +20,7 @@ Cocktail.destroy_all
 # Cocktail.create!(name: "mazut")
 # Cocktail.create!(name: "vodka tagada")
 
-
-
-
 require 'nokogiri'
-
 
 url = "https://www.1001cocktails.com/recettes/selection_96-grands-classiques.aspx"
 url2= "https://www.1001cocktails.com/recettes/selection_96-grands-classiques.aspx?page=2"

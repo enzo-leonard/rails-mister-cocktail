@@ -1,14 +1,24 @@
 # README
 
+
+TO DO LEARN
+
+* Random 7 cards
+
+* Style random
+
+* Style flash card
+
+* Function JS
+
+* Upgrade with db
+
+
 TO DO
 
-* Add selector
+* debug Select 2
 
-* Add query
-
-* Select 2 pour les ingrédients
-
-* Mobile first
+* Responsive
 
 * One page view
 
@@ -27,5 +37,7 @@ TO DO
 * mode voir mode editer
 
 * quizz
+
+* Login
 
 
