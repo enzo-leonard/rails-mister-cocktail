@@ -1,14 +1,20 @@
 // Import Google fonts
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
 @import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Open Sans", "Helvetica", "sans-serif";
-$headers-font: "Raleway", "Helvetica", "sans-serif";
+$body-font: "Raleway",
+"Helvetica",
+"sans-serif";
+$headers-font: "Raleway",
+"Helvetica",
+"sans-serif";
 
 
 .info {
   padding-top: 58px;
+
   h2 {
     font-family: 'McLaren', cursive;
     color: #774d37;

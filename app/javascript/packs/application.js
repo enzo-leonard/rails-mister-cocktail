@@ -10,12 +10,16 @@ require("channels")
 import 'bootstrap';
 import { initSelect2 } from './init_select2';
 import { initUpdateNavbarOnScroll} from './navbar';
+import { initLearn } from './learn';
+
+var ready = function () {
+  initUpdateNavbarOnScroll();
+  initSelect2();
+  initLearn();
+};
 
 
-initUpdateNavbarOnScroll();
-initSelect2();
-
-document.addEventListener('DOMContentLoaded', function () { console.log('dom chargé')});
+$(document).on('turbolinks:load', ready);
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

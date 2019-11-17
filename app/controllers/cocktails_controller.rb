@@ -62,7 +62,9 @@ class CocktailsController < ApplicationController
   end
 
   def learn
-    @cards = Cocktail.all
+    card_list = []
+    7.times { card_list << Cocktail.all.sample }
+    @cards = card_list
   end
 
   private

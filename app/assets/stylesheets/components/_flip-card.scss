@@ -20,6 +20,7 @@
       font-weight: 600;
     }
   }
+
   /* Remove this if you don't want the 3D effect */
 }
 
@@ -36,6 +37,7 @@
   transform: rotateY(180deg);
 }
 
+
 /* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
@@ -44,6 +46,7 @@
   height: 100%;
   backface-visibility: hidden;
 }
+
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
@@ -65,7 +68,7 @@
   .content {
     height: 60%;
     overflow-y: hidden;
-    padding :10px;
+    padding: 10px;
     margin-top: 25px;
   }
 
@@ -81,12 +84,12 @@
     align-items: end;
   }
 
-  .icon-title{
+  .icon-title {
     height: 60px;
     width: 60px;
-    background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-radius: 5px;
     margin-right: 16px;
     margin-top: 10px;
@@ -101,7 +104,7 @@
     margin: 2px;
   }
 
-  .end{
+  .end {
     border-radius: 0px 0px 5px 5px;
     font-weight: 900;
   }
@@ -112,10 +115,8 @@
     font-weight: 600;
     list-style-type: square;
     overflow: eclipse;
-    color : rgb(85, 85, 85);
+    color: rgb(85, 85, 85);
     max-height: 25px;
     overflow: hidden;
   }
 }
-
-

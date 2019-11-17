@@ -4,38 +4,41 @@
     <h2>Les cocktails de grecos </h2>
     <div class="selector">
       <%= form_tag cocktails_path, method: :get do %>
-        <%= select('get', :name ,Cocktail.all.collect {|p| [ p.name, p.id ] }, { include_blank: true }, class: 'select2',  data: { placeholder: "Recherche par nom" }, value: 'test') %>
+      <%= select('get', :name ,Cocktail.all.collect {|p| [ p.name, p.id ] }, { include_blank: true }, class: 'select2',  data: { placeholder: "Recherche par nom" }, value: 'test') %>
 
-        <%#= select_tag 'get[name]', options_from_collection_for_select(Ingredient.all, "id", "name"), class: 'select2', include_blank: true , prompt: "Select something", value: 'test'%>
-        <%= select('get', :ig , Ingredient.all.collect {|p| [ p.name, p.id ] }, { include_blank: true }, class: 'select2', multiple: 'multiple', data: { placeholder: "Recherche par ingrédients" }) %>
-        <%= submit_tag "Recherche", class: "w-10 btn btn-primary" %>
-       <% end %>
+      <%#= select_tag 'get[name]', options_from_collection_for_select(Ingredient.all, "id", "name"), class: 'select2', include_blank: true , prompt: "Select something", value: 'test'%>
+      <%= select('get', :ig , Ingredient.all.collect {|p| [ p.name, p.id ] }, { include_blank: true }, class: 'select2', multiple: 'multiple', data: { placeholder: "Recherche par ingrédients" }) %>
+      <%= submit_tag "Recherche", class: "w-10 btn btn-primary" %>
+      <% end %>
     </div>
     <a href="/learn"> Apprendre les cocktails </a>
-    </div>
   </div>
-  <div class="container">
+</div>
+<div class="container">
   <div class="info">
     <h2> <%=@result_msg%> </h2>
   </div>
   <div class="grid">
     <%@cocktails.each do |item| %>
-    <div class="flip-card">
+    <div class="flip-card hidden">
       <div class="flip-card-inner">
         <div class="flip-card-front">
-        <div class="cocktail-card" style="background-image : linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url( <%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>); background-size: cover; background-position-y: -286px;">
-        <a><%= item.name %></a>
-      </div>
+          <div class="cocktail-card"
+            style="background-image : linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url( <%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>); background-size: cover; background-position-y: -286px;">
+            <a><%= item.name %></a>
+          </div>
         </div>
-        <div class="flip-card-back"  style="background-image : linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)),  url( <%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>); background-size: cover;">
-        <div class="title" style="background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),  url( <%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>); background-size: cover;">
-          <img class="icon-title" src =<%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>>
-          <%= item.name %>
-        </div>
-        <div class="content">
-          <% item.doses.each do |dose| %>
+        <div class="flip-card-back"
+          style="background-image : linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.9)),  url( <%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>); background-size: cover;">
+          <div class="title"
+            style="background-image : linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),  url( <%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>); background-size: cover;">
+            <img class="icon-title" src=<%= item.photo.present? ? item.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>>
+            <%= item.name %>
+          </div>
+          <div class="content">
+            <% item.doses.each do |dose| %>
             <li>
-            <%= dose.description %>
+              <%= dose.description %>
             </li>
             <%end %>
           </div>

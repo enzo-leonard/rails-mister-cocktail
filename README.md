@@ -3,15 +3,14 @@
 
 TO DO LEARN
 
-* Random 7 cards
-
-* Style random
-
-* Style flash card
-
 * Function JS
 
-* Upgrade with db
+
+TO DO LEARN WITH DB
+
+
+
+
 
 
 TO DO
