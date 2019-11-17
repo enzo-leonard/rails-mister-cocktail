@@ -11,6 +11,7 @@
         <%= submit_tag "Recherche", class: "w-10 btn btn-primary" %>
        <% end %>
     </div>
+    <a href="/learn"> Apprendre les cocktails </a>
     </div>
   </div>
   <div class="container">
@@ -33,14 +34,14 @@
         </div>
         <div class="content">
           <% item.doses.each do |dose| %>
-            <div class=ig-list>
+            <li>
             <%= dose.description %>
-            </div>
+            </li>
             <%end %>
           </div>
           <div class="end">
-            <%= link_to 'Voir', cocktail_path(item), class: 'btn btn-primay' %>
-            </div>
+            <%= link_to 'Voir le cocktail', cocktail_path(item), class: 'btn btn-primay' %>
+          </div>
         </div>
       </div>
     </div>

@@ -8,15 +8,14 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 import 'bootstrap';
-import { initSelect2, addToList } from './init_select2';
+import { initSelect2 } from './init_select2';
 import { initUpdateNavbarOnScroll} from './navbar';
 
-document.addEventListener('DOMContentLoaded', function () {
-  initUpdateNavbarOnScroll();
-  initSelect2();
-  addToList();
-});
 
+initUpdateNavbarOnScroll();
+initSelect2();
+
+document.addEventListener('DOMContentLoaded', function () { console.log('dom chargé')});
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
