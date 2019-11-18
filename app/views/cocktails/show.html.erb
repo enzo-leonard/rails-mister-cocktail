@@ -2,14 +2,14 @@
 <div class="back">
   <a href="/" ><%= icon('fas', 'chevron-left') %></a>
 </div>
-<div class="container show-view">
+<div class="container center-view">
 <div class="card-show">
 
 
     <div class="col1">
 
       <div class="cocktail-card" style="background-image : linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),  url( <%= @cocktail.photo.present? ? @cocktail.photo : cl_image_path("vucs2ncsgrk6eo0iho2g") %>); background-size: cover; background-position-y: -286px;">
-        <h1><%= @cocktail.name%> </h1>
+        <h1 style="color: white"><%= @cocktail.name%> </h1>
       </div>
 
 

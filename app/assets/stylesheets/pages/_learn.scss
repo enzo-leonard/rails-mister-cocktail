@@ -3,7 +3,7 @@
   font-family: 'Alata', sans-serif;
 
   .flip-card:hover .flip-card-inner {
-    transform: rotateY(30deg);
+    transform: rotateY(45deg);
   }
 
   .hidden {
@@ -13,6 +13,8 @@
   .progress {
     position: absolute;
     top: 30px;
+    left: 20%;
+    right: 20%;
   }
 
   .btn {

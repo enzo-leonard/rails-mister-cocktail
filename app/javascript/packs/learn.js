@@ -13,14 +13,14 @@ const initLearn = () => {
     const btnNo = document.querySelector('#no')
     const btnShow = document.querySelector("#show-card")
     const btnNext = document.querySelector("#btn-next")
-    const progressBar = document.querySelector(".progress-bar")
+    const progressTrue = document.querySelector("#progressTrue")
+    const progressFalse = document.querySelector("#progressFalse")
     const nbMaxCard = 7
     const score = document.querySelector(".score")
 
     let trueAnswer = 0
     let falseAnswer = 0
 
-    progressBar.style.width = "0%"
     //const answer = $("#answer").value
     let i = -1;
 
@@ -56,7 +56,8 @@ const initLearn = () => {
     const next = () => {
       if (i >= 0) hide(cardsRecto[i])
       i++
-      progressBar.style.width = `${((i / nbMaxCard) * 100).toFixed(1)}%`
+      progressTrue.style.width = `${((trueAnswer / nbMaxCard) * 100).toFixed(1)}%`
+      progressFalse.style.width = `${((falseAnswer / nbMaxCard) * 100).toFixed(1)}%`
       if (i < nbMaxCard) {
         show(cardsRecto[i])
 
